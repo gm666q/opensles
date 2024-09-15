@@ -725,6 +725,9 @@ typedef struct Play_interface {
     SLuint32 mFramesSinceLastSeek;       // Frames mixed since last known accurate position
     SLuint32 mFramesSincePositionUpdate; // Frames mixed since last position update callback
 #endif
+#ifdef LSWTCS
+    SceUInt32 mLastTick;
+#endif
 } IPlay;
 
 typedef struct {

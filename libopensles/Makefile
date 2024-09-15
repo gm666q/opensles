@@ -48,6 +48,10 @@ ifeq ($(HAVE_PTHREAD),1)
 CFLAGS += -DHAVE_PTHREAD
 endif
 
+ifeq ($(LSWTCS),1)
+CFLAGS += -DLSWTCS
+endif
+
 ifeq ($(SYBERIA),1)
 CFLAGS += -DSYBERIA
 endif
