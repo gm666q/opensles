@@ -97,6 +97,10 @@ typedef struct COutputMix_struct COutputMix;
 #include "android_AudioRecorder.h"
 #endif
 
+#ifdef LSWTCS
+#include <psp2/types.h>
+#endif
+
 #define STEREO_CHANNELS 2
 
 #ifdef USE_OUTPUTMIXEXT
